@@ -1,0 +1,52 @@
+@import '../../_variables.scss';
+
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    overflow: hidden;
+    margin: 0;
+    height: 223px;
+    border-radius: 25px;
+
+    .bannerImage {
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(60%);
+        border-radius: 15px;
+    }
+
+    .bannerText {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        font-size: calc(0.8vw + 1.2em);
+        font-weight: 700;
+        text-align: center;
+        line-height: 68px;
+        color: $primary-color;
+    }
+
+    @media(max-width: $breakpoint-mobile) {
+        border: solid 1px;
+        box-shadow: none;
+        height: 111px;
+        border-radius: 10px;
+
+        .bannerImage {
+            border-radius: 10px;
+        }
+
+        .bannerText {
+            left: 40%;
+            height: 48px;
+            width: 70%;
+            text-align:start ;
+            font-size: 24px;
+            line-height: 24px;
+        }
+    }       
+}
+

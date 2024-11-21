@@ -1,0 +1,59 @@
+@import '../../_variables.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    height: calc(100vh - 357px); 
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    .hBox {
+        font-size: 288px;
+        font-weight: 700;
+        line-height: 263px;
+        color: $secondary-color;
+        margin:0;
+    }
+     
+    p{
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+    color: $secondary-color;
+    margin:0;
+    }
+
+    .link {
+        display: flex;
+
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25.67px;
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        color: $tertiary-color;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .container {
+        margin: 50px 0;
+        .hBox {
+            font-size: 96px;
+            line-height: 99px;
+        }
+        p {
+            width: 260px;
+            font-size: 18px;
+            line-height: 25.67px;
+        }
+        .link {
+            font-size: 14px;
+            line-height: 19.96px;
+        }
+    }
+}

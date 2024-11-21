@@ -1,0 +1,46 @@
+@import '../../../_variables.scss';
+
+.tagsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+
+    .tags {
+        border-radius: 15px;
+        background-color: $secondary-color;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+        min-width: 115px;
+        height: 25px;
+ 
+        p {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 19.96px;
+            text-align: center;
+            text-decoration-skip-ink: none;
+            padding: 0 20px; 
+            color: $primary-color;
+            white-space: nowrap;   
+        }
+    }
+    @media (max-width: $breakpoint-mobile) {
+        margin: 10px 0;
+        gap: 10px;
+        .tags{
+            min-width: 60px; // !maquette à 84px!
+            height: 18px;
+            border-radius: 5PX;
+       
+            p {
+                font-size: 10px;
+                line-height: 14.26px;
+                padding: 0 14px;   
+            }
+        }
+    }
+}

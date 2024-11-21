@@ -1,0 +1,25 @@
+@import '../../../_variables.scss';
+
+.rates {
+    width: 196px;
+    height: 36px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    gap:18.6px;
+    align-items: center;
+    margin: 0;
+
+    .starInactive{
+        fill: mix($tertiary-color, #FFFFFF, 11);//#E3E3E3
+    }
+    .starActive {
+        fill: $secondary-color ;
+
+    }
+    @media (max-width: $breakpoint-mobile) {
+        width: 98px;
+        height: 13px;
+        gap: 7.74px
+    }
+}

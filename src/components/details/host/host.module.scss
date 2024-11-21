@@ -1,0 +1,49 @@
+@import '../../../_global.scss';
+
+.host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 167px;
+
+        h2 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25.67px;
+            text-align: right;
+            white-space: pre-line;
+            color: $secondary-color;
+        }
+        
+        .profiles {
+            margin-left: 10px;
+            height: 64px;
+            width: 64px;
+            border-radius: 32px;
+        }
+}
+
+
+@media (max-width :$breakpoint-mobile) {
+.host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100px;
+
+        h2 {
+            text-align: right;
+            font-size: 12px;
+            line-height: 17.11px;
+        }
+        
+        .profiles {
+            height: 32px;
+            width: 32px;
+            border-radius: 16px;
+        }
+}
+}
+
+
+

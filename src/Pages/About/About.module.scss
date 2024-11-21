@@ -1,0 +1,12 @@
+@import '../../_variables.scss';
+
+.dropBox {
+    max-width: 1240px;
+    padding: 0 8.75%;
+    margin-top :30px;
+    @media (max-width: $breakpoint-mobile) {
+       width: 100%;
+       margin-top: 20px;
+       padding: 0;
+    }
+}  

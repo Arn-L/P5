@@ -1,0 +1,55 @@
+@import '../../../_variables.scss';
+
+.card {
+    display: flex;
+    max-height: 340px;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    filter:brightness(85%);
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    bottom: 15px;
+    height:0px;
+    left: 15px;
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: left;
+    text-decoration: none;
+    color:$primary-color;
+}
+
+.title p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: left;
+    text-decoration: none;
+    color:$primary-color;
+    margin:0;
+    padding:0;
+    }
+
+    a {
+        //display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    @media (max-width :$breakpoint-mobile) {
+        .card{
+        width: 335px;
+        height: 255px;
+        aspect-ratio: none;
+        }
+    }
