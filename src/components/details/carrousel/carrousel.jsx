@@ -9,34 +9,12 @@ const Carrousel = ({ logementPictures }) => {
     const pictureLength = logementPictures.length
     const IsLength = (pictureLength > 1)
 
-    useEffect(() => {
-        if (logementPictures.length === 0) return
-        const preloadImages = (images) => {
-            const links = images.map((src) => {
-                const link = document.createElement('link')
-                link.rel = 'preload'
-                link.href = src
-                link.as = 'image'
-                document.head.appendChild(link)
-                return link
-            })
-            return () => {
-                links.forEach((link) => {
-                    document.head.removeChild(link)
-                })
-            }
-        }
-        const cleanup = preloadImages(logementPictures)
-        return cleanup
-    }, [logementPictures])
-
     const carrouselNav = (direction) => {
         if (direction === 'next') {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % pictureLength)
         } else {
             setCurrentIndex((prevIndex) => (prevIndex - 1 + pictureLength) % pictureLength)
         }
-        setIsImageLoaded(false)
     }
 
     return (

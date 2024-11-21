@@ -10,8 +10,8 @@ const About = () => {
         <div className='boxOutlet'>
             <Banner numPict={1} />
             {Object.values(kasafr).map((kasa, index) => (
-                <div className={styles.dropBox} >
-                    <Dropdown key={index} name={Object.keys(kasa)[0]} texts={kasa[Object.keys(kasa)[0]]} />
+                <div key={index} className={styles.dropBox} >
+                    <Dropdown name={Object.keys(kasa)[0]} texts={kasa[Object.keys(kasa)[0]]} />
                 </div>
             ))}
         </div>

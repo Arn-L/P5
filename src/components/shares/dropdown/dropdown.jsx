@@ -7,15 +7,14 @@ const Dropdown = ({ name, texts }) => {
 
     const toggleText = () => {
         setIsTextVisible(!isTextVisible);
-        console.log(isTextVisible)
     }
 
     return (
         <div className={styles.container}>
-            <div className={styles.buttonBox}>
+            <div className={styles.buttonBox} onClick={toggleText} >
                 <button className={styles.dropdown} >
                     <p> {name}</p>
-                    <div onClick={toggleText} >
+                    <div>
                         <img src={arrow} alt='En savoir plus' className={`${styles.arrowDrop} ${isTextVisible ? styles.downDrop : ''}`} />
                     </div>
                 </button>
