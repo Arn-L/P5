@@ -1,75 +1,115 @@
-# components logique
-src/
-│
-├── Pages/
-│   ├── Home/                           //isMobile={isMobile}-->gallery
-│   │   ├── index.jsx
-│   │   └── Home.module.scss 
-│   ├── About/                          //isMobile={isMobile}-->informations
-│   │   ├── index.jsx
-│   │   └── About.module.scss 
-│   ├── NotFound/                          // Page 404
-│   │   ├── index.jsx
-│   │   └── NotFound.module.scss 
-        fiche logement page
-│   └── Layout.jsx
-│
-├── components/                         // Composants et styles partagés
-│   └── banner/
-│   │   ├── banner.jsx
-│   │   └── banner.module.scss
-│   └── carrousel/
-│   │   ├── carrousel.jsx
-│   │   └── carrousel.modules.scss
-│   └── gallery/
-│   │   ├── index.jsx
-│   │   ├── gallery.jsx
-│   │   ├── gallery.module.scss
-│   │   ├── card.jsx
-│   │   └── card.modules.css
-│   └── informations/
-│   │   ├── index.jsx
-│   │   ├── collapse.jsx
-│   │   ├── collapse.modules.css
-│   │   ├── detail.jsx
-│   │   ├── detail.modules.css
-│   │   ├── detail-bar.jsx
-│   │   ├── detail-bar.module.scss
-│   │   ├── host.jsx
-│   │   ├── host.modules.css
-│   │   ├── rate.modules.css
-│   │   ├── rate-star.jsx
-│   │   ├── rate-star.module.scss
-│   │   ├── title.jsx
-│   │   ├── title.module.scss
-│   │   ├── tag.jsx
-│   │   └── tag.module.scss
-│   └── layout/
-│   │   ├── index.jsx
-│   │   ├── footer.jsx
-│   │   ├── footer.module.scss
-│   │   ├── header.jsx
-│   │   ├── header.module.scss
-│   │   ├── nav.jsx
-│   │   └── nav.module.scss
-│   └── Logo/
-│   │   ├── index.jsx
-│   │   ├── logo.jsx
-│   │   ├── logo-a.jsx
-│   │   ├── logo-K.jsx
-│   │   ├── logo-s.jsx
-│   │   ├── logo-group.jsx
-│   │   └── logo.module.scss
-│   └── styles/
-│       ├── _variables.scss
-│       └── _mixins.scss
-│
-├── index.jsx       //isMobile={isMobile}-->App
-└── _global.css
+## Structure du projet
+```
+25 dossiers, 3 fichiers racines : index, variables, global
+
+src
+├── Pages
+│   ├── About
+│   ├── Details
+│   ├── Home
+│   └── NotFound
+├── components
+│   ├── banner
+│   ├── details
+│   │   ├── carrousel
+│   │   ├── host
+│   │   ├── informations
+│   │   ├── rate
+│   │   └── tag
+│   ├── gallery
+│   │   ├── card
+│   │   └── gallery
+│   ├── layout
+│   │   ├── footer
+│   │   ├── header
+│   │   └── layout
+│   └── shares
+│       └── dropdown
+├── assets
+│   ├── data
+│   └── ...
+├── _global.scss
+├── index.jsx
+└── _variables.scss
+
+projet complet : 25 directories, 44 files
+
+src
+├── assets
+│   ├── arrow_forward_vector.svg
+│   ├── arrowrounded_up_vector.svg
+│   ├── bannerAbout.jpg
+│   ├── bannerHome.jpg
+│   ├── data
+│   │   ├── kasafr.json
+│   │   └── logements.json
+│   ├── logoPink.png
+│   ├── logoWhite.png
+│   └── Star_Vector.svg
+├── components
+│   ├── banner
+│   │   ├── banner.jsx
+│   │   └── banner.module.scss
+│   ├── details
+│   │   ├── carrousel
+│   │   │   ├── carrousel.jsx
+│   │   │   └── carrousel.module.scss
+│   │   ├── host
+│   │   │   ├── host.jsx
+│   │   │   └── host.module.scss
+│   │   ├── informations
+│   │   │   ├── informations.jsx
+│   │   │   └── informations.module.scss
+│   │   ├── rate
+│   │   │   ├── rate.jsx
+│   │   │   └── rate.module.scss
+│   │   └── tag
+│   │       ├── tag.jsx
+│   │       └── tag.module.scss
+│   ├── gallery
+│   │   ├── card
+│   │   │   ├── card.jsx
+│   │   │   └── card.module.scss
+│   │   └── gallery
+│   │       ├── gallery.jsx
+│   │       └── gallery.module.scss
+│   ├── layout
+│   │   ├── footer
+│   │   │   ├── footer.jsx
+│   │   │   └── footer.module.scss
+│   │   ├── header
+│   │   │   ├── header.jsx
+│   │   │   └── header.module.scss
+│   │   └── layout
+│   │       └── layout.jsx
+│   └── shares
+│       └── dropdown
+│           ├── dropdown.jsx
+│           └── dropdown.module.scss
+├── _global.scss
+├── index.jsx
+├── logo.svg
+├── Pages
+│   ├── About
+│   │   ├── About.jsx
+│   │   └── About.module.scss
+│   ├── Details
+│   │   └── Details.jsx
+│   ├── Home
+│   │   └── Home.jsx
+│   └── NotFound
+│       ├── NotFound.jsx
+│       └── NotFound.module.scss
+├── reportWebVitals.js
+├── setupTests.js
+└── _variables.scss
+```
 
 
 
 
+
+********************************************************************
 
 
 # Getting Started with Create React App
