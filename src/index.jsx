@@ -3,14 +3,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './_global.scss';
-import Layout from './components/layout/layout/layout';
-import Home from './Pages/Home/Home';
-import About from './Pages/About/About';
-import Details from './Pages/Details/Details';
-import NotFound from './Pages/NotFound/NotFound';
+import Layout from './components/layout/layout/layout'
+import Home from './Pages/Home/Home'
+import About from './Pages/About/About'
+import Details from './Pages/Details/Details'
+import NotFound from './Pages/NotFound/NotFound'
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <Router>
@@ -24,4 +23,4 @@ root.render(
       </Routes>
     </Router>
   </React.StrictMode>
-);
+)

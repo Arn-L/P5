@@ -42,7 +42,6 @@
     }
 }
 
-
 @media (max-width: $breakpoint-mobile) {
     .carrouselContainer {
         height: 255px;
@@ -57,21 +56,21 @@
         display: none;
     }
 
-.next, .before {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); 
-    width: 12px;
-    height: 20px;
-    background: transparent;
-    border: none; 
+    .next, .before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); 
+        width: 12px;
+        height: 20px;
+        background: transparent;
+        border: none; 
 
-    &.before {
-        left: 7px;
-        transform: translateY(-50%) scaleX(-1);
+        &.before {
+            left: 7px;
+            transform: translateY(-50%) scaleX(-1);
+        }
+        &.next {
+            right: 7px;
+        }
     }
-    &.next {
-        right: 7px;
-    }
-}
 }

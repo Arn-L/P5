@@ -1,9 +1,10 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-import Header from '../header/header';
-import Footer from '../footer/footer';
+import React from 'react'
+import { Outlet } from 'react-router-dom'
+import Header from '../header/header'
+import Footer from '../footer/footer'
 
 const Layout = () => {
+
   return (
     <React.StrictMode>
       <div className='body'>
@@ -16,7 +17,7 @@ const Layout = () => {
         <Footer />
       </div>
     </React.StrictMode>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

@@ -1,10 +1,8 @@
-// src/Pages/About/index.jsx
-import React from 'react';
-import Banner from '../../components/banner/banner';
+import React from 'react'
+import Banner from '../../components/banner/banner'
 import kasafr from '../../assets/data/kasafr.json'
-import Dropdown from '../../components/shares/dropdown/dropdown';
+import Dropdown from '../../components/shares/dropdown/dropdown'
 import styles from './About.module.scss'
-
 
 const About = () => {
 
@@ -18,6 +16,6 @@ const About = () => {
             ))}
         </div>
     )
-};
+}
 
-export default About;
+export default About

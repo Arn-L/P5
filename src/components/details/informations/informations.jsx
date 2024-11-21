@@ -1,13 +1,13 @@
-// src/components/informations/index.jsx
-import React from 'react';
-import './informations.module.scss';
-import styles from './informations.module.scss';
+import React from 'react'
+import './informations.module.scss'
+import styles from './informations.module.scss'
 import Host from '../host/host'
-import Tag from '../tag/tag';
-import Rate from '../rate/rate';
-import Dropdown from '../../shares/dropdown/dropdown';
+import Tag from '../tag/tag'
+import Rate from '../rate/rate'
+import Dropdown from '../../shares/dropdown/dropdown'
 
 const Informations = ({ logement }) => {
+
     return (
         <div>
             <div className={styles.titleContents}>
@@ -30,7 +30,7 @@ const Informations = ({ logement }) => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Informations;
+export default Informations

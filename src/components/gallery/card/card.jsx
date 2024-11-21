@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styles from './card.module.scss';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import styles from './card.module.scss'
 
 const Card = ({ logement }) => {
     return (
@@ -14,7 +14,7 @@ const Card = ({ logement }) => {
                 </div>
             </Link>
         </React.StrictMode >
-    );
-};
+    )
+}
 
-export default Card;
+export default Card

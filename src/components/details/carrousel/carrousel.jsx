@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import '../../../_global.scss';
-import styles from './carrousel.module.scss';
-import arrowRight from '../../../assets/arrow_forward_vector.svg';
+import React, { useState, useEffect } from 'react'
+import '../../../_global.scss'
+import styles from './carrousel.module.scss'
+import arrowRight from '../../../assets/arrow_forward_vector.svg'
 
 
 const Carrousel = ({ logementPictures }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [isImageLoaded, setIsImageLoaded] = useState(false);
+    const [currentIndex, setCurrentIndex] = useState(0)
     const pictureLength = logementPictures.length
     const IsLength = (pictureLength > 1)
 
@@ -14,45 +13,39 @@ const Carrousel = ({ logementPictures }) => {
         if (logementPictures.length === 0) return
         const preloadImages = (images) => {
             const links = images.map((src) => {
-                const link = document.createElement('link');
-                link.rel = 'preload';
-                link.href = src;
-                link.as = 'image';
-                document.head.appendChild(link);
+                const link = document.createElement('link')
+                link.rel = 'preload'
+                link.href = src
+                link.as = 'image'
+                document.head.appendChild(link)
                 return link
-            });
+            })
             return () => {
                 links.forEach((link) => {
-                    document.head.removeChild(link);
-                });
+                    document.head.removeChild(link)
+                })
             }
         }
-        const cleanup = preloadImages(logementPictures);
-        return cleanup;
+        const cleanup = preloadImages(logementPictures)
+        return cleanup
     }, [logementPictures])
 
     const carrouselNav = (direction) => {
         if (direction === 'next') {
-            setCurrentIndex((prevIndex) => (prevIndex + 1) % pictureLength);
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % pictureLength)
         } else {
-            setCurrentIndex((prevIndex) => (prevIndex - 1 + pictureLength) % pictureLength);
+            setCurrentIndex((prevIndex) => (prevIndex - 1 + pictureLength) % pictureLength)
         }
-        setIsImageLoaded(false);
-    };
-
-    const handleImageLoad = () => {
-        setIsImageLoaded(true);
-    };
+        setIsImageLoaded(false)
+    }
 
     return (
         <div className={styles.carrouselContainer}>
             <img
                 key={logementPictures[currentIndex]}
                 src={logementPictures[currentIndex]}
-                alt="Thumbnail"
+                alt="vignette"
                 className={styles.carrousel}
-                onLoad={handleImageLoad}
-            //style={{ opacity: isImageLoaded ? 1 : 1 }}
             />
             {IsLength ? (
                 <div>
@@ -68,7 +61,7 @@ const Carrousel = ({ logementPictures }) => {
                 null
             )}
         </div>
-    );
-};
+    )
+}
 
-export default Carrousel;
+export default Carrousel

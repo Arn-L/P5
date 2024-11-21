@@ -28,9 +28,11 @@
             white-space: nowrap;   
         }
     }
+    
     @media (max-width: $breakpoint-mobile) {
         margin: 10px 0;
         gap: 10px;
+        
         .tags{
             min-width: 60px; // !maquette à 84px!
             height: 18px;

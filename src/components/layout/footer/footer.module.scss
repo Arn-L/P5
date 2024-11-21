@@ -1,6 +1,5 @@
 @import '../../../_variables.scss';
 
-
 .footer {
     box-sizing: border-box;
     display: flex;
@@ -26,6 +25,7 @@
         line-height: 34.22px;
         padding-top: 28px;
     }
+
     @media (max-width: $breakpoint-mobile) {
         p {
             font-size: 0.8em;

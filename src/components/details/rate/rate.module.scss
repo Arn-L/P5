@@ -11,7 +11,7 @@
     margin: 0;
 
     .starInactive{
-        fill: mix($tertiary-color, #FFFFFF, 11);//#E3E3E3
+        fill: mix($tertiary-color, #FFFFFF, 11); //couleur de palette #E3E3E3
     }
     .starActive {
         fill: $secondary-color ;
@@ -20,6 +20,6 @@
     @media (max-width: $breakpoint-mobile) {
         width: 98px;
         height: 13px;
-        gap: 7.74px
+        gap: 7.74px;
     }
 }

@@ -1,10 +1,11 @@
-import React from 'react';
-import '../../_global.scss';
-import bannerAbout from '../../assets/bannerAbout.jpg';
-import bannerHome from '../../assets/bannerHome.jpg';
-import styles from './banner.module.scss';
+import React from 'react'
+import '../../_global.scss'
+import bannerAbout from '../../assets/bannerAbout.jpg'
+import bannerHome from '../../assets/bannerHome.jpg'
+import styles from './banner.module.scss'
 
 const Banner = ({ numPict }) => {
+
     return (
         <div className={styles.bannerContainer}>
             <img
@@ -18,7 +19,7 @@ const Banner = ({ numPict }) => {
                 </div>
             )}
         </div>
-    );
+    )
 }
 
-export default Banner;
+export default Banner

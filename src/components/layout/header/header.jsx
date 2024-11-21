@@ -1,8 +1,7 @@
-// src/components/Layout/header.jsx
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import logo from '../../../assets/logoPink.png'
-import styles from './header.module.scss';
+import styles from './header.module.scss'
 
 const Header = () => {
     const location = useLocation()
@@ -25,7 +24,7 @@ const Header = () => {
                 </ul>
             </nav>
         </header>
-    );
-};
+    )
+}
 
-export default Header;
+export default Header

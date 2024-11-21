@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import styles from './dropdown.module.scss';
+import React, { useState } from 'react'
+import styles from './dropdown.module.scss'
 import arrow from '../../../assets/arrowrounded_up_vector.svg'
 
 const Dropdown = ({ name, texts }) => {
@@ -8,7 +8,7 @@ const Dropdown = ({ name, texts }) => {
     const toggleText = () => {
         setIsTextVisible(!isTextVisible);
         console.log(isTextVisible)
-    };
+    }
 
     return (
         <div className={styles.container}>
@@ -31,7 +31,7 @@ const Dropdown = ({ name, texts }) => {
             </div>
 
         </div >
-    );
-};
+    )
+}
 
-export default Dropdown;
+export default Dropdown

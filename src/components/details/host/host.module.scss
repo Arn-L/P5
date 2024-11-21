@@ -6,30 +6,29 @@
     align-items: center;
     width: 167px;
 
-        h2 {
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 25.67px;
-            text-align: right;
-            white-space: pre-line;
-            color: $secondary-color;
-        }
+    h2 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25.67px;
+        text-align: right;
+        white-space: pre-line;
+        color: $secondary-color;
+    }
         
-        .profiles {
-            margin-left: 10px;
-            height: 64px;
-            width: 64px;
-            border-radius: 32px;
-        }
+    .profiles {
+        margin-left: 10px;
+        height: 64px;
+        width: 64px;
+        border-radius: 32px;
+    }
 }
 
-
 @media (max-width :$breakpoint-mobile) {
-.host {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100px;
+    .host {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100px;
 
         h2 {
             text-align: right;
@@ -42,8 +41,5 @@
             width: 32px;
             border-radius: 16px;
         }
+    }
 }
-}
-
-
-

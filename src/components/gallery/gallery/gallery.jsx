@@ -1,9 +1,10 @@
-import React from 'react';
-import '../../../_global.scss';
-import styles from './gallery.module.scss';
-import Card from '../card/card';
+import React from 'react'
+import '../../../_global.scss'
+import styles from './gallery.module.scss'
+import Card from '../card/card'
 
 const Gallery = ({ logements }) => {
+
     return (
         <div className={styles.gallery}>
             {logements.map((logement, index) => (
@@ -12,7 +13,7 @@ const Gallery = ({ logements }) => {
                 </div>
             ))}
         </div>
-    );
-};
+    )
+}
 
-export default Gallery;
+export default Gallery

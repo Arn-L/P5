@@ -1,7 +1,7 @@
 @import '../../_variables.scss';
 
 .dropBox {
-    max-width: 1240px;
+    max-width: $maxWidth-desktop;
     padding: 0 8.75%;
     margin-top :30px;
     @media (max-width: $breakpoint-mobile) {
